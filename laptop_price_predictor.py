@@ -10,33 +10,16 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
-# ======================== This  section will remove the hamburger and watermark and footer and header from streamlit ===========
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            # header {visibility: hidden;}
-            footer:after {
-                            content:'\u00A9 Rahul-AkaVector. All rights reserved.';
-	                        visibility: visible;
-	                        display: block;
-	                        position: relative;
-	                        #background-color: red;
-	                        padding: 5px;
-	                        top: 2px;
-                        }
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-# ======================== This  section will remove the hamburger and watermark and footer and header from streamlit ===========
+
 st.title("ONLINE LAPTOP PRICE PREDICTION  💻💻💻")
-st.markdown("<p style='text-align: right;'>by&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VECTOR 💻👨‍💻</p>",
+st.markdown("<p style='text-align: right;'>by&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sumit & Abhi 💻👨‍💻</p>",
             unsafe_allow_html=True)
-st.text("""A laptop price predictor is a user-friendly web tool that estimates laptop prices based on specifications such as brand,
-processor type, RAM size, storage capacity, and display size. 💻💰 It helps buyers, sellers, and curious individuals 
-obtain estimated laptop prices, enabling informed decisions and budget planning. 📈💡 With easy online access, it allows 
-effortless price comparisons and ensures value for money. 🌐💸""")
+st.text("""Our Laptop Price Predictor is an easy-to-use tool online. 
+It figures out how much laptops 💻 might cost based on things like brand, processor, RAM, storage, and screen size.
+It helps people who want to buy or sell laptops  💻, or just want to know more about laptop 💻 prices. 
+You can use it to plan your budget and compare prices effortlessly.
+Whether you're buying a laptop or selling one,💻 our tool makes it easier and gives you helpful information. 🌐💸""")
 st.write("---")
 st.header("Select Laptop 💻 Specifications")
 
