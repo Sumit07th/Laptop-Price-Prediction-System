@@ -37,7 +37,7 @@ type_list = sorted(data['TypeName'].unique())
 typename = col1.selectbox('TypeName', type_list,index=4)
 
 ram_list = sorted(data['Ram'].unique())
-ram = col2.selectbox('Ram ( in GB )', ram_list,index=3)
+ram = col2.selectbox('RAM ( in GB )', ram_list,index=3)
 
 weight = col2.number_input("Enter Weight of the laptop ( Between 0.69 and 4.69 ) ", min_value=0.69, max_value=4.69,
                          step=0.1,value=2.5)
@@ -54,8 +54,7 @@ if ips == "Yes":
 else:
     ips = 0
 
-inches_list = [18.4, 17.3, 17.0, 15.6, 15.4, 15.0, 14.1, 14.0, 13.9, 13.5, 13.3, 13.0, 12.5, 12.3, 12.0, 11.6, 11.3,
-               10.1]
+inches_list = [17.0, 15.6, 14.0, 13.3, 12.0, 11.6]
 inch = col2.selectbox('Screen Size (inches)', inches_list,index=3)
 
 resolution_list = ['1920x1080', '1366x768', '3840x2160', '2560x1440', '2880x1800', '1600x900', '2560x1600', '2736x1824',
@@ -69,7 +68,7 @@ cpu_list = sorted(data['Cpu brand'].unique())
 cpu = col1.selectbox('CPU', cpu_list,index=3)
 
 # ssd_list = sorted(data['SSD'].unique())
-ssd_list = [0, 64, 128, 240, 256, 512]
+ssd_list = [0, 64, 128, 240, 256, 512, 1024]
 ssd = col2.selectbox('SSD ( in GB )', ssd_list,index=4)
 
 # hdd_list = sorted(data['HDD'].unique())
