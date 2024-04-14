@@ -72,7 +72,7 @@ ssd_list = [0, 64, 128, 240, 256, 512, 1024]
 ssd = col2.selectbox('SSD ( in GB )', ssd_list,index=4)
 
 # hdd_list = sorted(data['HDD'].unique())
-hdd_list = [0, 128, 256, 500, 512, 1024, 2048]
+hdd_list = [0, 128, 256, 512, 1024, 2048]
 hdd = col2.selectbox('HDD ( in GB )', hdd_list, index=5)
 
 gpu_list = sorted(data['GPU brand'].unique())
